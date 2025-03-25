@@ -1,13 +1,14 @@
-## MultiTenantEventManager
-# Kurulum
+# MultiTenantEventManager
+## Kurulum
 
-- Veritabanını oluşturmak için aşağıdaki komutu çalıştırın:
-
+- Migration scriptleri proje içerisinde yer almaktadır.
+- Bu işlem, Persistence katmanında bulunan DbContext üzerinden veritabanı ve tabloları oluşturacaktır.
+- Veritabanını oluşturmak için aşağıdaki komutu MultiTenantEventManager.Persistence projesinde çalıştırın,
 > update-database
 
-- Bu işlem, Persistence katmanında bulunan DbContext üzerinden veritabanı ve tabloları oluşturacaktır.
 
-# Projeyi çalıştırın.
+
+## Projeyi çalıştırın.
 
 - Proje ilk çalıştırıldığında SeedDataService aracılığı ile aşağıdaki veriler otomatik olarak eklenecektir:
 
@@ -15,7 +16,7 @@
 
 > Default Tenant adında bir tenant kaydı.
 
-# Önemli Notlar
+## Önemli Notlar
 
 - Veritabanı oluşturulmadan önce proje çalıştırılırsa hata alınacaktır. Bu nedenle update-database komutunu çalıştırmadan projeyi başlatmayın.
 
@@ -25,7 +26,7 @@
 
 - Tenantlara bağlı olarak etkinlikler oluşturulabilir ve bu etkinliklere katılımcı kayıtları eklenebilir.
 
-# Kullanım Akışı
+## Kullanım Akışı
 
 - SüperAdmin, yeni bir tenant oluşturur.
 
