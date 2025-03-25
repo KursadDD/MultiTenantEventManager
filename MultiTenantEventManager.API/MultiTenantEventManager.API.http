@@ -1,0 +1,6 @@
+@MultiTenantEventManager.API_HostAddress = http://localhost:5168
+
+GET {{MultiTenantEventManager.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
